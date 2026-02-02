@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Name Guess Game</title>
+</head>
+<body>
+    <h2>Task 1</h2>
+
+    <h2>Name Guess Game</h2>
+
+    <input type="text" id="nameInput" placeholder="Enter your guess">
+    <br><br>
+
+    <button onclick="guessName()">Guess</button>
+
+    <p id="result"></p>
+
+    <script>
+        function guessName() {
+            var correctName = "GOJJU";
+
+            var userName = document.getElementById("nameInput").value;
+
+            if (userName === correctName) {
+                document.getElementById("result").innerText = 
+                    "🎉 Correct! You guessed the right name.";
+            } else {
+                document.getElementById("result").innerText = 
+                    "❌ Wrong guess. Try again!";
+            }
+        }
+    </script>
+
+</body>
+</html>
